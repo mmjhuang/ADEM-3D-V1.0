@@ -1,0 +1,57 @@
+2014/09/01
+2017/12/12 For 3D codes
+
+
+These codes in this folder is same as those in the Book. 
+The are only for 2-D particle.
+The differnet between them is the number of columns in the stma (the data structures of PAI and PAJ are same as Stma) 
+arrayment, becasue the finial target is to simulate non-spereical 3D particles.
+
+1st column:  radius  (or minor axis for ellips particle)
+2nd column:  density 
+3rd column:  mass
+4th column:  surface friction  (updated in 20171212)
+5th column:  particle position in x dirextion
+6th column:  particle position in y dirextion
+7th column:  particle position in z dirextion (empty for 2-D)
+8th column:  Young's modulus
+9th column:  Poission's ratio
+10th column: velocity in x direction
+11th column: velocity in y direction
+12th column: velocity in z direction
+13th column: distance between the host particle to the local particle  
+14th column: CORn
+15th column: accelration in x direction
+16th column: acceleration in y dirextion
+17th column: acceleration in z direction
+18th column: 0 for sphereical particle or host particle in an elliptical partile. Or index 
+to its host particle for a baby particle in an elliptical particle.  
+19th column: distance to the host particle in x-direction for 3d
+20th column: distance to the host particle in y-direction for 3d  
+21nd column: distance to the host particle in z-direction for 3d  
+22nd column: angular velocity around x-axis  
+23th column: angular velocity around y-axis  
+24th column: angular velocity around z-axis 
+25nd column: angular accleration around x-axis  
+26th column: angular acceleration around y-axis  
+27th column: angular acceleration around z-axis 
+28th column: material properties for particle/ solid? liquid? wall? circle? 
+29th column: Momentum for spherecal particle aodund x  axis 
+30th column: Momentum for spherecal particle around y  axis    ! added 2018-06-30
+31st column: Momentum for spherecal particle around z axis     ! added 2018-06-30
+32nd column: space angle phi        ! added 2018-06-30
+33nd columne: space angle thete     ! added 2018-06-30
+34th column:  space angle psi      ! added 2018-06-30
+35th column empty
+
+
+
+
+space angle for ellipse particle ()
+
+The target of this code is to put 3000 particles into a narrow tube, 
+creat baby particles for those particles in elliptical shapes
+and densely packed.
+
+To avoid unreasonable overlap, huge gravity and imagine coat method is used.
+
